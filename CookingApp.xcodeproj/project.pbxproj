@@ -13,9 +13,14 @@
 		60C03D32278996E400D3ADDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C03D30278996E400D3ADDE /* Main.storyboard */; };
 		60C03D34278996E500D3ADDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C03D33278996E500D3ADDE /* Assets.xcassets */; };
 		60C03D37278996E500D3ADDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C03D35278996E500D3ADDE /* LaunchScreen.storyboard */; };
+		60C03D3F2789975800D3ADDE /* Deserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C03D3E2789975800D3ADDE /* Deserts.swift */; };
+		60C03D4327899D3100D3ADDE /* CustomCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C03D4227899D3100D3ADDE /* CustomCVC.swift */; };
+		60C03D452789AD4200D3ADDE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C03D442789AD4200D3ADDE /* DetailedViewController.swift */; };
+		A5175F0D02E76141366460E2 /* Pods_CookingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50AEF11627F9DC1115F57B2 /* Pods_CookingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F3D1C3A59C4D3D8810B0742 /* Pods-CookingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookingApp.release.xcconfig"; path = "Target Support Files/Pods-CookingApp/Pods-CookingApp.release.xcconfig"; sourceTree = "<group>"; };
 		60C03D27278996E400D3ADDE /* CookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C03D2A278996E400D3ADDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C03D2C278996E400D3ADDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		60C03D33278996E500D3ADDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60C03D36278996E500D3ADDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60C03D38278996E500D3ADDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C03D3E2789975800D3ADDE /* Deserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserts.swift; sourceTree = "<group>"; };
+		60C03D4227899D3100D3ADDE /* CustomCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVC.swift; sourceTree = "<group>"; };
+		60C03D442789AD4200D3ADDE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		D50AEF11627F9DC1115F57B2 /* Pods_CookingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAABBB9E05B6BFBE70CF18FB /* Pods-CookingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookingApp.debug.xcconfig"; path = "Target Support Files/Pods-CookingApp/Pods-CookingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5175F0D02E76141366460E2 /* Pods_CookingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111DF9A4B2512C49ECDB7A3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAABBB9E05B6BFBE70CF18FB /* Pods-CookingApp.debug.xcconfig */,
+				5F3D1C3A59C4D3D8810B0742 /* Pods-CookingApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		60C03D1E278996E400D3ADDE = {
 			isa = PBXGroup;
 			children = (
 				60C03D29278996E400D3ADDE /* CookingApp */,
 				60C03D28278996E400D3ADDE /* Products */,
+				111DF9A4B2512C49ECDB7A3B /* Pods */,
+				675245341F77249AE68ABBC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +85,19 @@
 				60C03D33278996E500D3ADDE /* Assets.xcassets */,
 				60C03D35278996E500D3ADDE /* LaunchScreen.storyboard */,
 				60C03D38278996E500D3ADDE /* Info.plist */,
+				60C03D3E2789975800D3ADDE /* Deserts.swift */,
+				60C03D4227899D3100D3ADDE /* CustomCVC.swift */,
+				60C03D442789AD4200D3ADDE /* DetailedViewController.swift */,
 			);
 			path = CookingApp;
+			sourceTree = "<group>";
+		};
+		675245341F77249AE68ABBC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D50AEF11627F9DC1115F57B2 /* Pods_CookingApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60C03D3B278996E500D3ADDE /* Build configuration list for PBXNativeTarget "CookingApp" */;
 			buildPhases = (
+				893B1AA30C555FA1DB7D3394 /* [CP] Check Pods Manifest.lock */,
 				60C03D23278996E400D3ADDE /* Sources */,
 				60C03D24278996E400D3ADDE /* Frameworks */,
 				60C03D25278996E400D3ADDE /* Resources */,
+				6C70F01CE544633C80CBC3FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C70F01CE544633C80CBC3FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CookingApp/Pods-CookingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CookingApp/Pods-CookingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CookingApp/Pods-CookingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893B1AA30C555FA1DB7D3394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60C03D23278996E400D3ADDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +217,9 @@
 			files = (
 				60C03D2F278996E400D3ADDE /* ViewController.swift in Sources */,
 				60C03D2B278996E400D3ADDE /* AppDelegate.swift in Sources */,
+				60C03D452789AD4200D3ADDE /* DetailedViewController.swift in Sources */,
+				60C03D4327899D3100D3ADDE /* CustomCVC.swift in Sources */,
+				60C03D3F2789975800D3ADDE /* Deserts.swift in Sources */,
 				60C03D2D278996E400D3ADDE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +364,7 @@
 		};
 		60C03D3C278996E500D3ADDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAABBB9E05B6BFBE70CF18FB /* Pods-CookingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +393,7 @@
 		};
 		60C03D3D278996E500D3ADDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3D1C3A59C4D3D8810B0742 /* Pods-CookingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
